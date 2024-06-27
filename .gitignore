@@ -1,9 +1,10 @@
-HELP.md
+# Ignora diretórios de build do Maven
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
+# Permite o Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ignora configurações específicas de IDE
 ### STS ###
 .apt_generated
 .classpath
@@ -26,6 +27,8 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+
+# Permite build dirs dentro de src (se necessário, mas revise se é realmente necessário)
 !**/src/main/**/build/
 !**/src/test/**/build/
 
